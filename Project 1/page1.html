@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Document type is html -->
+
+<html lang="en">
+<!-- stating that our html document is in english -->
+
+<head>
+    <title>Project 1</title>
+    <meta charset="UTF-8">
+    <meta name="project 1" content="Chess">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+   <header class="site-header">
+        <h1 id="mainHeading">Welcome to the Chess Project</h1>
+    </header>
+ 
+    <section id="subheading" class="shbox">
+        <h2>Chess Basics</h2>
+
+        <div class="floatBoxMain">
+            
+                <div class="floatBox Left">
+                    <img class="img1 floatImage" src="./images/Chess image.jpg" alt="Chess">
+                    <h3>What is Chess?</h3>
+                    <p>
+                        Chess is a strategic board game played between two players. It is one of the most popular games in the world, known for its deep strategy and intellectual challenge.
+                    </p>
+                </div>
+                <div class="floatBox Right">
+                    <img class="img2 floatImage" src="./images/Chess image 2.webp" alt="Chess">
+                    <h3>Goal of Chess</h3>
+                    <p>
+                        The objective of chess is to checkmate your opponent's king, which means putting the king in a position where it cannot escape capture.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+    <table id="chess-pieces" class="chess-table">
+        <thead>
+            <tr>
+                <th>Piece</th>
+                <th>Function</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>King</td>
+                <td>Can move one square in any direction. (IMPORTANT) The most important piece in all of chess; protect at all costs. </td>
+            </tr>
+            <tr>
+                <td>Queen</td>
+                <td>Can move any number of squares in any direction (horizontal, vertical, diagonal). Most powerful piece.</td>
+            </tr>
+            <tr>
+                <td>Rook</td>
+                <td>Moves any number of squares horizontally or vertically.</td>
+            </tr>
+            <tr>
+                <td>Bishop</td>
+                <td>Moves any number of squares diagonally.</td>
+            </tr>
+            <tr>
+                <td>Knight</td>
+                <td>Moves in an L-shape: two squares in one direction and one perpendicular. Can jump over pieces.</td>
+            </tr>
+            <tr>
+                <td>Pawn</td>
+                <td>Typically moves forward one square, or two on first move. In rare cases it can perform en passant capture which means capturing an opponent's pawn that has just moved two squares. Can Capture diagonally. Can promote to other pieces when reaching the opposite end.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<div class="floatBox">
+    <h3>Popular Chess Openings</h3>
+    <ul>
+        <li><span class="opening-name">Sicilian Defense</span> - A sharp opening where Black responds to 1.e4 with 1...c5</li> <!-- "one of my favorite openings" -->
+        <li><span class="opening-name">Queen's Gambit</span> - White offers a pawn on d4 to gain central control</li> <!-- "A movie was made about this opening cool right?" -->
+        <li><span class="opening-name">King's Indian Defense</span> - Black allows White to build a strong center and attacks it later</li>
+        <li><span class="opening-name">Ruy Lopez</span> - Also known as the Spanish Opening, it involves the moves 1.e4 2.e5 3.Nf3 4.Nc6 5.Bb5</li> <!-- "I have used this opening the most when i play with white" -->
+        <li><span class="opening-name">Italian Game</span> - A classical opening with 3.Bc4, developing the bishop early</li>
+        <li><span class="opening-name">French Defense</span> - Black responds to 1.e4 with 1...e6, preparing to challenge the center</li>
+    </ul>
+</div>
+   
+<section class="fact-section">
+    <button id="chessFactBtn" class="fact-button">Click me for a chess fact or else...</button>
+    <p id="chessFactOutput" class="fact-output">Click the button to see a chess fact.</p>
+</section>
+
+ <div class="topnav">
+    <br>
+        <nav class="menu">
+            <ul> 
+                <li><a href="page1.html">Main Chess Page</a></li>
+                <li><a href="page2.html">2nd Chess Page</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </nav>
+    </div>
+
+</body>
+ 
+</html>

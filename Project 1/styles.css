@@ -1,0 +1,293 @@
+/* RESPONSIVE DESIGN - Mobile devices 760px and below */
+@media (max-width: 760px) {
+    /* Stack float boxes vertically and make them full width on mobile */
+    .floatBox, .floatImage, .img1, .img2 {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        display: block;
+    }
+    
+    /* Make main container full width on mobile */
+    .floatBoxMain { width: 100%; }
+    
+    /* Expand menu to full width on mobile */
+    .menu { width: 100%; }
+}
+
+/* Set light blue background for the entire page */
+body {
+    background-color: lightblue;
+}
+
+/* Style all h2 headings with blue color */
+h2 {
+    color: rgb(11,73,241);
+}
+
+/* IMAGE STYLING */
+/* Create a 200x200 circular image with equal proportions and dark border */
+.img1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #333;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Make header span full width and clear floats */
+header {
+    float: left;
+    width: 100%;
+}
+
+/* Create a 200x200 circular image with equal proportions and dark border */
+.img2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #333;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MAIN HEADING STYLES */
+/* Style the main heading with dark blue color, centered, and light blue background */
+#mainHeading {
+    color: rgb(19, 0, 128);
+    margin-bottom: 10px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* FLOATING IMAGE STYLES */
+/* Float images to left with margin and dark rounded border */
+.floatImage {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+/* CONTENT BOX STYLING */
+/* Create a centered light blue container box with double border and 90% width */
+.shbox {
+    width: 90%;
+    background-color: rgb(100, 164, 219);
+    padding: 20px;
+    margin: 25px auto;
+    text-align: center;
+    font-style: normal;
+    border: 3px double black;
+    transition: transform 0.3s ease;
+    float: left;
+}
+
+/* Slightly enlarge the box when user hovers over it */
+.shbox:hover {
+    transform: scale(1.05);
+}
+
+/* MAIN FLOATING CONTAINER */
+/* Create a centered container at 90% width that holds float elements inside */
+.floatBoxMain {
+    width: 90%;
+    margin: 30px auto;
+    overflow: auto;
+}
+
+/* TWO-COLUMN LAYOUT BOXES */
+/* Float boxes side-by-side at 48% width with light gray background and borders */
+.floatBox {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    padding: 10px;
+    border: 2px solid #888;
+}
+
+/* FLOAT POSITIONING HELPERS */
+/* Float element to the left with right margin spacing */
+.Left {
+    float: left;
+    margin-right: 4%;
+}
+
+/* Float element to the right without additional margin */
+.Right {
+    float: right;
+    margin-right: 0;
+}
+
+
+/* NAVIGATION MENU STYLING */
+/* Create a centered navigation menu at 90% width with beige background and border */
+.menu {
+    width: 90%;
+    background-color: beige;
+    border: 4px double blueviolet;
+    padding: 10px;
+    margin: 0 auto 25px auto;
+}
+
+
+/* CHESS PIECES TABLE STYLING */
+/* Create a left-aligned table at 90% width with black border and white background */
+#chess-pieces {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px 0 20px 20px;
+    font-family: Arial, sans-serif;
+    float: left;
+    border: 3px solid black;
+    background-color: white;
+}
+
+/* Clear all floats at the start of sections */
+section {
+    clear: both;
+}
+
+/* Style all table cells with borders, padding, and left alignment */
+th, td {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style table headers with dark blue background and bold text */
+th {
+    background-color: #190be0;
+    font-weight: bold;
+}
+
+/* Highlight table rows with yellow background on hover */
+tr:hover {
+    background-color: #f8d406;
+}
+
+
+/* OPENING NAME STYLING */
+/* Style chess opening names in blue italic text with bold weight */
+.opening-name {
+    font-style: italic;
+    color: blue;
+    font-weight: bold;
+}
+
+/* PAGE 2 SPECIFIC STYLES */
+/* Set white background for page 2 content */
+.page2 {
+    background-color: white;
+}
+
+/* FAMOUS CHESS PLAYERS TABLE */
+/* Create a centered table at 90% width with black border for famous players */
+#famous-chess-players {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    border: 3px solid black;
+    float: left;
+}
+
+/* Style all cells in famous players table with borders and left alignment */
+#famous-chess-players th, #famous-chess-players td {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style famous players table headers with pink background and bold text */
+#famous-chess-players th {
+    background-color: #df087e;
+    font-weight: bold;
+}
+
+/* Add transition effects to famous players table rows */
+#famous-chess-players tr {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Highlight and scale famous players table rows slightly on hover */
+#famous-chess-players tr:hover {
+    background-color: #f8d406;
+    transform: scale(1.02);
+}
+
+
+/* PAGE 2 HEADING STYLING */
+/* Make page 2 h1 span full width with bottom margin */
+.page2 h1 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* NAVIGATION CONTAINER STYLING */
+/* Float navigation to left and clear all previous floats */
+.topnav {
+    float: left;
+    clear: both;
+}
+
+/* Alternate navigation container with additional top margin */
+.topnav2 {
+    float: left;
+    clear: both;
+    margin-top: 20px;
+}
+
+
+/* FACT BUTTON STYLING */
+/* Create a blue button with padding, rounded corners, and smooth transitions */
+.fact-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2f4fa3;
+    border: 2px solid #18307d;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Darken button and add shadow effect when user hovers over it */
+.fact-button:hover {
+    background-color: #1d3473;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* FACT OUTPUT STYLING */
+/* Create a hidden container for displaying chess facts with blue border and light background */
+.fact-output {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px solid #2f4fa3;
+    border-radius: 8px;
+    background-color: #f0f4ff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Display the fact output when the 'show' class is added by JavaScript */
+.fact-output.show {
+    display: block;
+}
+
+    
